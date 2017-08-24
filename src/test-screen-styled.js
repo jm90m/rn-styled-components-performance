@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
-import styled from 'styled-components/native';
+import styled from 'styled-components/src/native';
 import testData from './test-data';
 
 const Row = styled.View`
@@ -29,7 +29,7 @@ class TestScreenStyled extends Component {
     };
   }
   componentWillMount() {
-    console.log(`ScrollView - Rendering ${testData.length} components`);
+    console.log(`ListView - Rendering ${testData.length} components`);
     console.time('styled');
   }
 
@@ -60,7 +60,7 @@ class TestScreenStyled extends Component {
   }
 
   render() {
-    return this.renderScrollView();
+    return this.renderListView();
   }
 }
 
